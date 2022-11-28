@@ -20,7 +20,10 @@ int main()
   Rectangle rectangle(2.5, 3.0);
   Trapezoid trapezoid(2.5, 3.5, 4.0);
 
-  //Shape *Type;
+  Circle circle2(2);
+  Square square2(2);
+  Rectangle rectangle2(2, 3);
+  Trapezoid trapezoid2(2, 6, 5);
 
   std::vector<Shape*>shapeVect;
   
@@ -29,6 +32,11 @@ int main()
   shapeVect.push_back(&square);
   shapeVect.push_back(&rectangle);
   shapeVect.push_back(&trapezoid);
+  
+  shapeVect.push_back(&circle2);
+  shapeVect.push_back(&square2);
+  shapeVect.push_back(&rectangle2);
+  shapeVect.push_back(&trapezoid2);
 
   // Loop through each element in the shape vector
   for (Shape* i: shapeVect) {
